@@ -1,28 +1,83 @@
 /* Your code here */
+.wgs {
+  height: 241px;
+  position: relative;
+  width: 320px;
+  display: inline-block;
+  overflow: hidden;
+}
 
+.wgs__mole-head {
+  position: absolute;
+  height: 178px;
+  width: 188px;
+  left: 55px;
+  transition: margin-top 0.25s;
+}
 
+.wgs__dirt-pile {
+  position: absolute;
+  height: 110px;
+  width: 320px;
+  top: 130px;
+}
+
+.wgs__mole-head--hidden {
+  margin-top: 482px;
+}
+
+.pf {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
 
 /* UNCOMMENT THE CODE BELOW WHEN DIRECTED */
-/* .sb {
+.sb {
   background-color: cornflowerblue;
-  border-bottom: 1px solid #645DED;
+  border-bottom: 1px solid #645ded;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   color: white;
   display: flex;
   font-size: 30px;
   margin-bottom: 50px;
   padding: 10px 20px;
-} */
+}
 
-/* .sb__mole-counter {
+.wgs__mole-head--whacked {
+  border-radius: 50%;
+  border: 5px solid blue;
+  position: absolute;
+  opacity: 0;
+  animation: circle 1s ease-out;
+  width: 20px;
+  box-sizing: border-box;
+  pointer-events: none;
+  aspect-ratio: 1/1;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@keyframes circle {
+  0% {
+    width: 20px;
+    opacity: 1;
+  }
+
+  100% {
+    width: 100px;
+    opacity: 0.2;
+  }
+}
+
+*/ .sb__mole-counter {
   flex: 1 0 0;
   text-align: right;
-} */
+}
 
-/* .sb__score-holder {
+.sb__score-holder {
   flex: 1 0 0;
-} */
+}
 
-/* .sb__game-over--hidden {
+.sb__game-over--hidden {
   display: none;
-} */
+}
